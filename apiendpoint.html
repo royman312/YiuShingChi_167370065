@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+<pre>
+
+<h2>User Registration</h2>
+URL : http://port-5000.desmond2-desmondyiu724118.codeanyapp.com/index.html
+Method	  POST
+Data	  {
+              "username": "yourusername",
+              "password": "yourpassword"
+              
+          }
+Result	  {
+              "Registration Success"
+          }
+Error	  {
+              "Failed to Insert"
+          }
+<br>
+<hr>
+<br>
+<h2>User login</h2>
+URL : http://port-5000.desmond2-desmondyiu724118.codeanyapp.com/todo.html
+Method	  POST
+Data	  {
+              "username": "yourusername",
+              "password": "yourpassword"
+          }
+Result	  {
+              "Login successful,"+ "yourtodolistdata"
+          }
+Error	  {
+             "LOGIN FAIL"
+          }
+<br>
+<hr>
+<br>
+<h2>Load todo list</h2>
+URL : http://port-5000.desmond2-desmondyiu724118.codeanyapp.com/todo.html
+Method	  POST
+Data	  {
+              "username": "yourusername"
+          }
+Result	  {
+              "favorite" : "yourtodolistdata"
+          }
+Error	  {
+          }
+<br>
+<hr>
+<br>
+<h2>Update todo list</h2>
+URL : http://port-5000.desmond2-desmondyiu724118.codeanyapp.com/todo.html
+Method	  POST
+Data	  {
+              "username": "yourusername"
+              "favorite" : "yourtodolistdata"
+          }
+Result	  {
+              "1 record updated"
+          }
+Error	  {
+          }
+<br>
+<hr>
+<br>
+<h2>Search Video</h2>
+URL : http://port-5000.desmond2-desmondyiu724118.codeanyapp.com/Video.html
+Method	  Get
+Data	  {
+            "part" : "snippet, id",
+            "q" : "YourSearchKeyWord",
+            "type" : "video",
+            "key" : "APIKey"
+          }
+Result	  {
+           "item.id.videoId" "sOLVvMa_wI"
+           "item.snippet.title" : "古惑仔之古而不惑"
+           "item.snippet.description" : "求助熱線：186 186 WhatsApp/WeChat：98 186 186 http://www.nd.gov.hk/tc/telephone_enquiry.htm 吸食「冰毒」的禍害： http://www.nd.gov.hk/tc/stimulants.htm ..."
+           "item.snippet.thumbnails.high.url" : "https://i.ytimg.com/vi/_sOLVvMa_wI/hqdefault.jpg"
+           "item.snippet.channelTitle" : "保 安 局 禁 毒 處 Narcotics Division, Security Bureau"
+           "item.snippet.publishedAt" : "2017-06-24T08:51:02.000Z"
+          }
+Error	  {
+          }
+</pre>
+</body>
+
+</html>
